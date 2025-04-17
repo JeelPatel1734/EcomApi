@@ -289,9 +289,9 @@ app.post('/addCart', async (req, res) => {
         const { email,name, price, image, quantity } = req.body;
 
         // Validate input
-        if (!email || !name || !price || !image || !quantity) {
-            return res.status(400).json({ message: "All fields are required." });
-        }
+        // if (!email || !name || !price || !image || !quantity) {
+        //     return res.status(400).json({ message: "All fields are required." });
+        // }
 
         // Create a new Cart
         const newCart = new cart({
